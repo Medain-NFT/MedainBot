@@ -4,7 +4,6 @@ import os
 
 from discord.ext import commands
 from dotenv import load_dotenv
-from keepmealive import keep_alive
 
 load_dotenv()
 
@@ -96,5 +95,4 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
-keep_alive()
 bot.run(os.getenv('BOT_TOKEN'))
