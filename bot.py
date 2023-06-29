@@ -4,6 +4,7 @@ import os
 
 from discord.ext import commands
 from dotenv import load_dotenv
+from keepmealive import keep_alive
 
 load_dotenv()
 
@@ -63,7 +64,7 @@ async def on_message(message):
     if message.content == 'Medain Info':
         await message.channel.send("Medain Info :information_source:")
         await message.channel.send("Owner : <@754726440704147517> , <@997848260062478386> , <@896777693650108456>")
-        await message.channel.send("Bot Devaloper : <@957196694393614367> .")
+        await message.channel.send("Bot Developer : <@957196694393614367> .")
     
 
     if message.content == 'medain status':
@@ -95,5 +96,5 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
-
+keep_alive()
 bot.run(os.getenv('tock'))
