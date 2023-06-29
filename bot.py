@@ -97,4 +97,4 @@ async def on_message(message):
     await bot.process_commands(message)
 
 keep_alive()
-bot.run(os.getenv('tock'))
+bot.run(os.getenv('BOT_TOKEN'))
