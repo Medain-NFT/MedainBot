@@ -1,2 +1,2 @@
 language = "python3"
-run = "python3 -m pip install discord.py && python3 bot.py"
+run = "python3.9 -m pip install discord.py && python3.9 bot.py"
