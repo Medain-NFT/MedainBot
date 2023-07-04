@@ -95,7 +95,7 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    if 'specific_word' in message.content.lower():
+    if 'FuckYou' in message.content.lower():
         if not message.author.bot:
             user_id = message.author.id
             if user_id not in kicked_users:
