@@ -28,7 +28,7 @@ async def on_message(message):
     # Hello cmd
 
     if message.content == 'Hello Medain':
-        await message.channel.send('Hello How can i help you ?')
+        await message.channel.send('Hello How can i help?')
         await message.channel.send('My Commands')
         await message.channel.send('Medain Help , Medain bot help , Medain info , Medain status , Medain Report and Medain NFT')
 
